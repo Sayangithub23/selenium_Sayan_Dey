@@ -15,5 +15,5 @@ Web element identification and Selenium locator practice.
 
 ## Demo
 
-Demo video links will be added here.
+Demo video
 https://drive.google.com/drive/folders/1s3P5M70LLcIpDMJr_hO0hrsPcsu_q496?usp=sharing
