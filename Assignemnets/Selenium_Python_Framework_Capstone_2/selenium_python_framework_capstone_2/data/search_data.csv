@@ -1,0 +1,4 @@
+search_term,expected
+MacBook,results
+iPhone,results
+NonExistingProductXYZ,no_results

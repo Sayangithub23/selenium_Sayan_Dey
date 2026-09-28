@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.10.11 on win32)" generated="2026-09-28T11:14:49.555227" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Code\Python\Selenium\selenium_Sayan_Dey\Assignemnets\Robot_Framework_Web_Automation_Capstone_4\robot_framework_web_automation_capstone_4\tests">
+<suite id="s1-s1" name="Data Driven Tests" source="D:\Code\Python\Selenium\selenium_Sayan_Dey\Assignemnets\Robot_Framework_Web_Automation_Capstone_4\robot_framework_web_automation_capstone_4\tests\data_driven_tests.robot">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:50.087912" level="INFO">Opening browser 'chrome' to base url 'https://tutorialsninja.com/demo/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-28T11:14:50.087912" elapsed="2.453196"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-28T11:14:52.541108" elapsed="0.060882"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-28T11:14:52.601990" elapsed="0.001999"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:14:50.085352" elapsed="2.518637"/>
+</kw>
+<test id="s1-s1-t1" name="Search MacBook" line="9">
+<kw name="Search Product And Verify">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:52.606991" level="INFO">Opening url 'https://tutorialsninja.com/demo/'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-28T11:14:52.605991" elapsed="0.221261"/>
+</kw>
+<kw name="Search Product" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=search</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-28T11:14:52.828262" elapsed="0.023913"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:52.853172" level="INFO">Typing text 'MacBook' into text field 'name=search'.</msg>
+<arg>name=search</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:14:52.852175" elapsed="0.079895"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:52.933068" level="INFO">Clicking button 'css=button.btn.btn-default.btn-lg'.</msg>
+<arg>css=button.btn.btn-default.btn-lg</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:14:52.933068" elapsed="0.370672"/>
+</kw>
+<arg>${product}</arg>
+<status status="PASS" start="2026-09-28T11:14:52.827252" elapsed="0.476488"/>
+</kw>
+<kw name="Verify Search Results Exist" owner="common">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:53.317486" level="INFO">Current page contains element 'css=.product-layout'.</msg>
+<arg>css=.product-layout</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-28T11:14:53.304735" elapsed="0.013779"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:14:53.304735" elapsed="0.013779"/>
+</kw>
+<arg>MacBook</arg>
+<status status="PASS" start="2026-09-28T11:14:52.605991" elapsed="0.712523"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:14:52.603989" elapsed="0.715543"/>
+</test>
+<test id="s1-s1-t2" name="Search iPhone" line="10">
+<kw name="Search Product And Verify">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:53.323585" level="INFO">Opening url 'https://tutorialsninja.com/demo/'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-28T11:14:53.322572" elapsed="0.242642"/>
+</kw>
+<kw name="Search Product" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=search</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-28T11:14:53.568722" elapsed="0.039454"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:53.609165" level="INFO">Typing text 'iPhone' into text field 'name=search'.</msg>
+<arg>name=search</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:14:53.609165" elapsed="0.167645"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:53.777826" level="INFO">Clicking button 'css=button.btn.btn-default.btn-lg'.</msg>
+<arg>css=button.btn.btn-default.btn-lg</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:14:53.776810" elapsed="0.451829"/>
+</kw>
+<arg>${product}</arg>
+<status status="PASS" start="2026-09-28T11:14:53.566725" elapsed="0.664928"/>
+</kw>
+<kw name="Verify Search Results Exist" owner="common">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:54.261295" level="INFO">Current page contains element 'css=.product-layout'.</msg>
+<arg>css=.product-layout</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-28T11:14:54.237205" elapsed="0.024090"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:14:54.233654" elapsed="0.027641"/>
+</kw>
+<arg>iPhone</arg>
+<status status="PASS" start="2026-09-28T11:14:53.321578" elapsed="0.944607"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:14:53.320526" elapsed="0.948207"/>
+</test>
+<test id="s1-s1-t3" name="Search Canon" line="11">
+<kw name="Search Product And Verify">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:54.277298" level="INFO">Opening url 'https://tutorialsninja.com/demo/'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-28T11:14:54.275750" elapsed="0.217446"/>
+</kw>
+<kw name="Search Product" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=search</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-28T11:14:54.494225" elapsed="0.018043"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:54.513268" level="INFO">Typing text 'Canon' into text field 'name=search'.</msg>
+<arg>name=search</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:14:54.513268" elapsed="0.123459"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:54.639795" level="INFO">Clicking button 'css=button.btn.btn-default.btn-lg'.</msg>
+<arg>css=button.btn.btn-default.btn-lg</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:14:54.638495" elapsed="0.487183"/>
+</kw>
+<arg>${product}</arg>
+<status status="PASS" start="2026-09-28T11:14:54.494225" elapsed="0.631453"/>
+</kw>
+<kw name="Verify Search Results Exist" owner="common">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:55.181626" level="INFO">Current page contains element 'css=.product-layout'.</msg>
+<arg>css=.product-layout</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-28T11:14:55.127188" elapsed="0.054438"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:14:55.125678" elapsed="0.055948"/>
+</kw>
+<arg>Canon</arg>
+<status status="PASS" start="2026-09-28T11:14:54.273761" elapsed="0.907865"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:14:54.271757" elapsed="0.910871"/>
+</test>
+<kw name="Close Application" owner="common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-28T11:14:55.185637" elapsed="2.615506"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:14:55.184625" elapsed="2.616518"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:14:49.591950" elapsed="8.209193"/>
+</suite>
+<suite id="s1-s2" name="Login Tests" source="D:\Code\Python\Selenium\selenium_Sayan_Dey\Assignemnets\Robot_Framework_Web_Automation_Capstone_4\robot_framework_web_automation_capstone_4\tests\login_tests.robot">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:14:57.821362" level="INFO">Opening browser 'chrome' to base url 'https://tutorialsninja.com/demo/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-28T11:14:57.820359" elapsed="3.391628"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-28T11:15:01.211987" elapsed="0.033384"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-28T11:15:01.245371" elapsed="0.002621"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:14:57.819375" elapsed="3.429642"/>
+</kw>
+<test id="s1-s2-t1" name="Invalid Login Test" line="10">
+<kw name="Go To" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-09-28T11:15:01.251007" level="INFO">Opening url 'https://tutorialsninja.com/demo/'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-28T11:15:01.251007" elapsed="0.836011"/>
+</kw>
+<kw name="Open Login Page" owner="login">
+<kw name="Click My Account" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:02.092760" level="INFO">Clicking element 'xpath=//span[contains(text(),'My Account')]'.</msg>
+<arg>xpath=//span[contains(text(),'My Account')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:15:02.091733" elapsed="0.188204"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:15:02.090693" elapsed="0.190240"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:02.281935" level="INFO">Clicking link 'Login'.</msg>
+<arg>Login</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:15:02.281935" elapsed="1.360869"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=input-email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-28T11:15:03.643745" elapsed="0.036847"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:15:02.089690" elapsed="1.590902"/>
+</kw>
+<kw name="Login With Credentials" owner="login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:03.683500" level="INFO">Typing text 'invalid@example.com' into text field 'id=input-email'.</msg>
+<arg>id=input-email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:15:03.682914" elapsed="0.351523"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:04.035436" level="INFO">Typing text 'WrongPassword123' into text field 'id=input-password'.</msg>
+<arg>id=input-password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:15:04.035436" elapsed="0.139612"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:04.177051" level="INFO">Clicking element 'css=input[type='submit']'.</msg>
+<arg>css=input[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:15:04.176048" elapsed="0.914797"/>
+</kw>
+<arg>${EMAIL}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2026-09-28T11:15:03.681150" elapsed="1.409695"/>
+</kw>
+<kw name="Verify Login Error" owner="login">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css=.alert-danger</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-28T11:15:05.093844" elapsed="0.045667"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:05.159545" level="INFO">Current page contains element 'css=.alert-danger'.</msg>
+<arg>css=.alert-danger</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-28T11:15:05.140531" elapsed="0.019014"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:15:05.092854" elapsed="0.066691"/>
+</kw>
+<tag>login</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-09-28T11:15:01.249017" elapsed="3.911530"/>
+</test>
+<kw name="Close Application" owner="common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-28T11:15:05.165561" elapsed="2.524017"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:15:05.164564" elapsed="2.526012"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:14:57.803258" elapsed="9.887318"/>
+</suite>
+<suite id="s1-s3" name="Search Tests" source="D:\Code\Python\Selenium\selenium_Sayan_Dey\Assignemnets\Robot_Framework_Web_Automation_Capstone_4\robot_framework_web_automation_capstone_4\tests\search_tests.robot">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:07.707190" level="INFO">Opening browser 'chrome' to base url 'https://tutorialsninja.com/demo/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-28T11:15:07.705666" elapsed="3.518888"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-28T11:15:11.225565" elapsed="0.046333"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-28T11:15:11.271898" elapsed="0.002003"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:15:07.703667" elapsed="3.570234"/>
+</kw>
+<test id="s1-s3-t1" name="Search For MacBook" line="11">
+<kw name="Go To" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-09-28T11:15:11.275900" level="INFO">Opening url 'https://tutorialsninja.com/demo/'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-28T11:15:11.275900" elapsed="0.298608"/>
+</kw>
+<kw name="Search Product" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=search</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-28T11:15:11.575500" elapsed="0.051411"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:11.628446" level="INFO">Typing text 'MacBook' into text field 'name=search'.</msg>
+<arg>name=search</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:15:11.627451" elapsed="0.293732"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:11.922185" level="INFO">Clicking button 'css=button.btn.btn-default.btn-lg'.</msg>
+<arg>css=button.btn.btn-default.btn-lg</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:15:11.921183" elapsed="0.507174"/>
+</kw>
+<arg>MacBook</arg>
+<status status="PASS" start="2026-09-28T11:15:11.574508" elapsed="0.854842"/>
+</kw>
+<kw name="Verify Search Results Exist" owner="common">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:12.457401" level="INFO">Current page contains element 'css=.product-layout'.</msg>
+<arg>css=.product-layout</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-28T11:15:12.435436" elapsed="0.023044"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:15:12.434381" elapsed="0.024099"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-09-28T11:15:12.675778" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Search%20For%20MacBook.png"&gt;&lt;img src="Search%20For%20MacBook.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${TEST NAME}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-28T11:15:12.469031" elapsed="0.206747"/>
+</kw>
+<tag>search</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-09-28T11:15:11.274901" elapsed="1.404187"/>
+</test>
+<test id="s1-s3-t2" name="Search For iPhone" line="16">
+<kw name="Go To" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-09-28T11:15:12.684090" level="INFO">Opening url 'https://tutorialsninja.com/demo/'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-28T11:15:12.684090" elapsed="0.302862"/>
+</kw>
+<kw name="Search Product" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=search</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-28T11:15:12.988980" elapsed="0.055031"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:13.047554" level="INFO">Typing text 'iPhone' into text field 'name=search'.</msg>
+<arg>name=search</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:15:13.046028" elapsed="0.203880"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:13.252301" level="INFO">Clicking button 'css=button.btn.btn-default.btn-lg'.</msg>
+<arg>css=button.btn.btn-default.btn-lg</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:15:13.251282" elapsed="0.455821"/>
+</kw>
+<arg>iPhone</arg>
+<status status="PASS" start="2026-09-28T11:15:12.988335" elapsed="0.719909"/>
+</kw>
+<kw name="Verify Search Results Exist" owner="common">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:13.733584" level="INFO">Current page contains element 'css=.product-layout'.</msg>
+<arg>css=.product-layout</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-28T11:15:13.712052" elapsed="0.022622"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:15:13.709846" elapsed="0.024828"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-09-28T11:15:14.038191" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Search%20For%20iPhone.png"&gt;&lt;img src="Search%20For%20iPhone.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${TEST NAME}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-28T11:15:13.738320" elapsed="0.299871"/>
+</kw>
+<tag>regression</tag>
+<tag>search</tag>
+<status status="PASS" start="2026-09-28T11:15:12.682116" elapsed="1.356075"/>
+</test>
+<test id="s1-s3-t3" name="Search For Canon" line="21">
+<kw name="Go To" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-09-28T11:15:14.041203" level="INFO">Opening url 'https://tutorialsninja.com/demo/'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-28T11:15:14.040201" elapsed="0.329373"/>
+</kw>
+<kw name="Search Product" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=search</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-28T11:15:14.374227" elapsed="0.062642"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:14.438357" level="INFO">Typing text 'Canon' into text field 'name=search'.</msg>
+<arg>name=search</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:15:14.436869" elapsed="0.222202"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:14.661613" level="INFO">Clicking button 'css=button.btn.btn-default.btn-lg'.</msg>
+<arg>css=button.btn.btn-default.btn-lg</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-28T11:15:14.660589" elapsed="0.494894"/>
+</kw>
+<arg>Canon</arg>
+<status status="PASS" start="2026-09-28T11:15:14.371497" elapsed="0.783986"/>
+</kw>
+<kw name="Verify Search Results Exist" owner="common">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-28T11:15:15.186639" level="INFO">Current page contains element 'css=.product-layout'.</msg>
+<arg>css=.product-layout</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-28T11:15:15.158034" elapsed="0.029947"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:15:15.157012" elapsed="0.032983"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-09-28T11:15:15.375264" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Search%20For%20Canon.png"&gt;&lt;img src="Search%20For%20Canon.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${TEST NAME}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-28T11:15:15.193982" elapsed="0.181282"/>
+</kw>
+<tag>regression</tag>
+<tag>search</tag>
+<status status="PASS" start="2026-09-28T11:15:14.039200" elapsed="1.338605"/>
+</test>
+<kw name="Close Application" owner="common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-28T11:15:15.402059" elapsed="2.460140"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:15:15.392893" elapsed="2.469306"/>
+</kw>
+<status status="PASS" start="2026-09-28T11:15:07.691582" elapsed="10.170617"/>
+</suite>
+<status status="PASS" start="2026-09-28T11:14:49.557238" elapsed="28.308087"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">login</stat>
+<stat pass="2" fail="0" skip="0">regression</stat>
+<stat pass="3" fail="0" skip="0">search</stat>
+<stat pass="2" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="7" fail="0" skip="0">Tests</stat>
+<stat name="Data Driven Tests" id="s1-s1" pass="3" fail="0" skip="0">Tests.Data Driven Tests</stat>
+<stat name="Login Tests" id="s1-s2" pass="1" fail="0" skip="0">Tests.Login Tests</stat>
+<stat name="Search Tests" id="s1-s3" pass="3" fail="0" skip="0">Tests.Search Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

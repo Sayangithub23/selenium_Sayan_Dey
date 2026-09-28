@@ -1,0 +1,62 @@
+2026-09-24 10:23:11,840 - INFO - Product data loaded from CSV: 3 product(s)
+2026-09-24 10:23:18,024 - INFO - Starting browser
+2026-09-24 10:23:19,965 - INFO - Website opened: https://automationexercise.com/
+2026-09-24 10:23:20,026 - INFO - Registration data loaded from CSV
+2026-09-24 10:23:20,026 - INFO - Starting registration process
+2026-09-24 10:23:20,589 - INFO - Signup / Login clicked
+2026-09-24 10:23:20,660 - INFO - Signup details entered
+2026-09-24 10:23:21,117 - INFO - Signup button clicked
+2026-09-24 10:23:26,251 - INFO - Email already exists. Registration skipped.
+2026-09-24 10:23:26,323 - INFO - User is not logged in. Starting login process
+2026-09-24 10:23:26,323 - INFO - Login data loaded from CSV
+2026-09-24 10:23:27,619 - INFO - Signup / Login clicked
+2026-09-24 10:23:27,682 - INFO - Login credentials entered
+2026-09-24 10:23:28,706 - INFO - Login button clicked
+2026-09-24 10:23:28,737 - INFO - Login successful
+2026-09-24 10:23:28,737 - INFO - Processing product: Blue Top
+2026-09-24 10:23:28,737 - INFO - Starting product search: Blue Top
+2026-09-24 10:23:29,298 - INFO - Products button clicked
+2026-09-24 10:23:29,401 - INFO - Product entered in search box: Blue Top
+2026-09-24 10:23:29,855 - INFO - Search button clicked
+2026-09-24 10:23:29,897 - INFO - Product found in search results: Blue Top
+2026-09-24 10:23:29,898 - INFO - Adding product to cart: Blue Top
+2026-09-24 10:23:30,052 - INFO - Add to Cart clicked for: Blue Top
+2026-09-24 10:23:30,593 - INFO - Product added to cart: Blue Top
+2026-09-24 10:23:30,724 - INFO - Continue Shopping clicked
+2026-09-24 10:23:30,724 - INFO - Finished processing product: Blue Top
+2026-09-24 10:23:30,724 - INFO - Processing product: Men Tshirt
+2026-09-24 10:23:30,724 - INFO - Starting product search: Men Tshirt
+2026-09-24 10:23:31,284 - INFO - Products button clicked
+2026-09-24 10:23:31,354 - INFO - Product entered in search box: Men Tshirt
+2026-09-24 10:23:31,813 - INFO - Search button clicked
+2026-09-24 10:23:31,847 - INFO - Product found in search results: Men Tshirt
+2026-09-24 10:23:31,847 - INFO - Adding product to cart: Men Tshirt
+2026-09-24 10:23:32,007 - INFO - Add to Cart clicked for: Men Tshirt
+2026-09-24 10:23:32,556 - INFO - Product added to cart: Men Tshirt
+2026-09-24 10:23:32,709 - INFO - Continue Shopping clicked
+2026-09-24 10:23:32,710 - INFO - Finished processing product: Men Tshirt
+2026-09-24 10:23:32,710 - INFO - Processing product: Sleeveless Dress
+2026-09-24 10:23:32,710 - INFO - Starting product search: Sleeveless Dress
+2026-09-24 10:23:33,286 - INFO - Products button clicked
+2026-09-24 10:23:33,371 - INFO - Product entered in search box: Sleeveless Dress
+2026-09-24 10:23:33,863 - INFO - Search button clicked
+2026-09-24 10:23:33,886 - INFO - Product found in search results: Sleeveless Dress
+2026-09-24 10:23:33,887 - INFO - Adding product to cart: Sleeveless Dress
+2026-09-24 10:23:34,051 - INFO - Add to Cart clicked for: Sleeveless Dress
+2026-09-24 10:23:34,608 - INFO - Product added to cart: Sleeveless Dress
+2026-09-24 10:23:34,741 - INFO - Continue Shopping clicked
+2026-09-24 10:23:34,741 - INFO - Finished processing product: Sleeveless Dress
+2026-09-24 10:23:34,741 - INFO - Opening shopping cart
+2026-09-24 10:23:35,234 - INFO - Cart button clicked
+2026-09-24 10:23:35,237 - INFO - Shopping cart opened
+2026-09-24 10:23:35,282 - INFO - Proceeding to checkout
+2026-09-24 10:23:35,810 - INFO - Proceed To Checkout clicked
+2026-09-24 10:23:35,890 - INFO - Placing order
+2026-09-24 10:23:36,347 - INFO - Place Order clicked
+2026-09-24 10:23:36,403 - INFO - Entering payment details
+2026-09-24 10:23:36,530 - INFO - Payment details entered
+2026-09-24 10:23:38,415 - INFO - Pay and Confirm Order clicked
+2026-09-24 10:23:38,421 - INFO - Order completed. Current URL: https://automationexercise.com/payment_done/1900
+2026-09-24 10:23:38,466 - INFO - E-commerce flow completed successfully
+2026-09-24 10:23:38,466 - INFO - Closing browser
+2026-09-24 10:23:41,507 - INFO - Browser closed

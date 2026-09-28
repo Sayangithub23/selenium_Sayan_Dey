@@ -1,0 +1,54 @@
+@startuml
+
+title Overall E-Commerce Automation Workflow
+
+start
+
+:Launch Browser;
+:Open E-Commerce Website;
+
+if (Account Exists?) then (Yes)
+    :Skip Registration;
+else (No)
+    :Register New Account;
+endif
+
+if (Already Logged In?) then (Yes)
+    :Continue;
+else (No)
+    :Login;
+endif
+
+:Read Test Data;
+
+repeat
+    :Search Product;
+    :Add Product to Cart;
+repeat while (More Products?) is (Yes)
+
+:Open Cart;
+:Verify Cart Details;
+
+if (Cart Details Correct?) then (Yes)
+    :Proceed to Checkout;
+else (No)
+    :Update Cart;
+    :Verify Cart Details;
+endif
+
+:Enter Payment Details;
+:Confirm Payment;
+
+if (Payment Successful?) then (Yes)
+    :Order Confirmed;
+    :Download Invoice;
+else (No)
+    :Capture Failure Screenshot;
+endif
+
+:Capture Screenshots;
+:Generate Execution Logs;
+
+stop
+
+@enduml
